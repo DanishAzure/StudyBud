@@ -1,0 +1,2 @@
+# StudyBud
+First Django project
