@@ -25,9 +25,8 @@ SECRET_KEY = "django-insecure-0g0_w7ub-2c-0)@*vg6_ni#g9(m$_32_#w!ma$osf%#aq=ftwf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://*.github.dev']
 # Application definition
 
 INSTALLED_APPS = [
@@ -55,7 +54,7 @@ ROOT_URLCONF = "Studybud.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / 'templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
